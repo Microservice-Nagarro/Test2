@@ -1,12 +1,12 @@
-using BHF.MS.MyMicroservice.Models;
-using BHF.MS.MyMicroservice.Services;
+using BHF.MS.Test2.Models;
+using BHF.MS.Test2.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BHF.MS.MyMicroservice.Controllers
+namespace BHF.MS.Test2.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class MyMicroserviceController(ILogger<MyMicroserviceController> logger, IExampleService service) : ControllerBase
+    public class Test2Controller(ILogger<Test2Controller> logger, IExampleService service) : ControllerBase
     {
         [HttpGet]
         [ResponseCache(VaryByQueryKeys = ["*"], Duration = 60)]
